@@ -96,7 +96,7 @@ int32_t InitDgtzParams(CAENDPP_DgtzParams_t *Params) {
     Params->WFParams.vp2 = CAENDPP_PHA_VIRTUALPROBE2_TrapBLCorr;
     Params->WFParams.dp1 = CAENDPP_PHA_DigitalProbe1_Peaking;
     Params->WFParams.dp2 = CAENDPP_PHA_DigitalProbe2_Trigger;
-    Params->WFParams.recordLength = (int32_t)4096; // (8192);
+    Params->WFParams.recordLength = (int32_t)26214; // (8192);
     Params->WFParams.preTrigger = (int32_t)(2000);
     Params->WFParams.probeSelfTriggerVal = 150;
     Params->WFParams.probeTrigger = CAENDPP_PHA_PROBETRIGGER_MainTrig;

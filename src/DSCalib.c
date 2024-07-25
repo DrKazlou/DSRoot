@@ -139,10 +139,10 @@ void CalibMenu::DoSetVal()
 		sprintf(Histo.fFormula, "%s", CName);
 		
 		//That should help with bining troubles
-		//if (Histo.detHE){
-		//	delete Histo.detHE;
-		//	Histo.detHE = new TH1D("h_detHE", "h_detHE", 16384, 0, 16384 * Histo.k + Histo.b); 
-		//}
+		if (Histo.detHE){
+			delete Histo.detHE;
+			Histo.detHE = new TH1D("h_detHE", "h_detHE", 16384, 0, 16384 * Histo.k + Histo.b); 
+		}
 	}
 	
 	gr->GetYaxis()->SetTitleOffset(1.3);
